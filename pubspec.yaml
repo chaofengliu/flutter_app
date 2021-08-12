@@ -60,6 +60,14 @@ flutter:
   assets:
     - images/icon.png
     - images/test.jpeg
+    - images/approve_selected.png
+    - images/approve_unselected.png
+    - images/contract_selected.png
+    - images/contract_unselected.png
+    - images/msg_selected.png
+    - images/msg_unselected.png
+    - images/home_selected.png
+    - images/home_unselected.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
