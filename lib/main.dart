@@ -1,8 +1,44 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp2());
 }
+class MyApp2 extends StatelessWidget {
+  const MyApp2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter盒子模型',
+      theme: ThemeData(
+        primarySwatch: Colors.blue
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('盒子模型'),
+        ),
+        body: Center(
+          child: Container(
+            width: 300,
+            height: 300,
+            color: Colors.blue,
+            child: Container(
+              color: Colors.red,
+              margin: EdgeInsets.fromLTRB(10, 5, 20, 30),
+              child: Container(
+                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                color: Colors.white60,
+                child: Text("这是一段文字"),
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
