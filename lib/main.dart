@@ -24,12 +24,12 @@ class MyApp2 extends StatelessWidget {
             color: Colors.blue,
             child: Container(
               color: Colors.red,
-              margin: EdgeInsets.fromLTRB(10, 5, 20, 30),
+              margin: const EdgeInsets.fromLTRB(10, 5, 20, 30),
               child: Container(
-                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                margin: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                 color: Colors.white60,
-                child: Text("这是一段文字"),
-                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                child: const Text("这是一段文字"),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
               ),
             ),
           ),
